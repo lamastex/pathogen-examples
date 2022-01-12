@@ -107,7 +107,7 @@
          \caption{Summary of the main levels of the pipeline}
          \label{fig:my_label}
       \end{figure}
-      \textsf{\textbf{Data:}} Historical data from the foreign exchange market for the trading of currencies. The data sets consist of pairs of currencies and futures/commodities with \textsf{\textbf{values}} recorded \textsf{\textbf{every one minute}} over the last two decades.
+      \textsf{\textbf{Data:}} Historical data from the foreign exchange market for the trading of currencies. The data sets consist of pairs of currencies and futures/commodities with \textsf{\textbf{values}} recorded \textsf{\textbf{every one minute}} over the last two decades.\\
       \vspace{0.6in}
       \textsf{\textbf{Cloud Computing:}} A cluster was utilized in order to distribute the computational tasks and scale on demand within the Apache Spark framework.\\
       \vspace{0.6in}
@@ -211,8 +211,8 @@ The occurrence of consecutive reversal points for a specific reversal order is t
 +-----+-----+------------------+--------------------+--------------------+
 |  src|  dst|          normCorr|      aggressiveness|         sensitivity|
 +-----+-----+------------------+--------------------+--------------------+
-| 7200|61120|0.7042253521126761| 0.11715155100118536|0.010176879325396902|
-| 7200|61017|               0.6| 0.11715155100118536|0.017430209595300727|
+| 7210|61014|0.9259259259259258| 0.14875136530932828|0.019126830444798487|
+| 7210|61113|0.8064516129032259| 0.14875136530932828|0.016698026578792328|
 +-----+-----+------------------+--------------------+--------------------+
 \end{BVerbatim}
 \caption{Output of Pathogen: The src and dst indicate the event id's of the related nodes, the normCorr stands for the normalized correlation and the last two arguments are the causality measures mentioned above. The event 7210, i.e., a small rise in gold price at order 7, seems to precede both 61014 and 61113, which are order 6 oil price fall and rise of fairly steep normalised slopes. In other words, there is strong evidence for a slight rise in gold price seeming to just precede a rather sharp fall or rise in the oil price at orders 6 and 7, respectively.
